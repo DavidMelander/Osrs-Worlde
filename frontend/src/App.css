@@ -1,0 +1,61 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-background {
+  background-image: url(./assets/melander99_A_lone_warrior_kneeling_in_prayer_adorned_in_intri_dea12dfe-fa80-4ff0-8ea3-7f7ba5ea9908_0.png);
+  object-fit: cover;
+  background-size: cover; /* Make sure the gradient covers the entire element */
+  background-position: center; /* Center the gradient */
+  background-repeat: no-repeat; /* Prevent the gradient from repeating */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  color: white; /* Text color for contrast */
+  text-align: center; /* Center align text */
+  
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

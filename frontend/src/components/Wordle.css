@@ -1,0 +1,187 @@
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.guess-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.guess-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.guess-input {
+  width: 40px;
+  height: 40px;
+  margin: 0 2px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: 2px solid black;
+}
+
+.guess-cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  margin: 0 2px;
+  border: 2px solid #000000;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+}
+
+.guess-button {
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 2px solid black;
+  height: 31px;
+  width: 65px;
+  margin: 0 2px ;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.restart-button {
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: 2px solid black;
+  height: 30px;
+  width: 65px;
+  margin: 0 2px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.non-editable {
+  width: 40px;
+  height: 40px;
+  margin: 0 2px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #8a3f3f00;
+  margin: 0 10px;
+}
+
+
+.guess-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.guess-input_text {
+  border: #000000 2px solid;
+  width: "25%";
+  height: 25px;
+  font-size: 20px;
+}
+
+.hint-text {
+  text-shadow: #000000 2px 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.guess-input {
+  border: 2px solid #000000;
+}
+
+.guess-cell.green {
+  background-color: #48cf3b;
+  color: rgb(0, 0, 0);
+}
+
+.guess-cell.yellow {
+  background-color: #ffee00;
+  color: rgb(0, 0, 0);
+}
+
+.guess-cell.gray {
+  background-color: #eceaea;
+  color: rgb(0, 0, 0);
+}
+
+.guess-cell.neutral {
+  border: none;
+  background-color: transparent;
+}
+
+.guess-cell.space {
+  border: none;
+  background-color: transparent;
+}
+
+.guess-cell.hyphen {
+  border: none;
+  background-color: transparent;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .hint-text {
+    font-size: 18px;
+  }
+
+  .guess-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  .guess-input {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .guess-cell {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .guess-button {
+    width: 65px;
+    font-size: 12px;
+  }
+
+  .restart-button {
+    height: 25px;
+    width: 65px;
+    font-size: 12px;
+  }
+
+  .non-editable {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .guess-input_text {
+    width: "25%";
+    height: 25px;
+    font-size: 20px;
+  }
+}
